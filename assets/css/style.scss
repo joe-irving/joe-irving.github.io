@@ -1,0 +1,13 @@
+---
+---
+
+$bg-color:       {{ site.background_color }} !default;
+$accent-color:   {{ site.accent_color  }} !default;
+$header-font:    "/assets/fonts/MajorMonoDisplay-Regular.ttf";
+$font: "/assets/fonts/MontserratAlternates-Light.ttf";
+
+// Default numbers
+
+$article-width: 600px;
+
+@import "base";

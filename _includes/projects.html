@@ -1,0 +1,19 @@
+{% assign first_project = site.data.projects | first  %}
+
+<section class="projects">
+  <form>
+    <select name="projects" id="projects">
+      {% for project in site.data.projects %}
+      <option value="{{ project.name | url_encode }}">{{project.name}}</option>
+      {% endfor %}
+    </select>
+  </form>
+  {% for project in site.data.projects %}
+  <iframe
+  {% if project != first_project  %}
+  class = "hide"
+  {% endif %}
+  id="{{ project.name | url_encode }}"
+  src="{{ project.link }}"></iframe>
+  {% endfor %}
+</section>
