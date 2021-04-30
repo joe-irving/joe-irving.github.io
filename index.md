@@ -1,7 +1,7 @@
 ---
 layout: home
 image: /assets/images/preview.png
-title: An example title
+
 ---
 # {{site.title}}
 
@@ -19,6 +19,6 @@ Email me on [{{site.email}}](mailto:{{site.email}})
 
 Send me a message [on Telegram](https://t.me/{{site.telegram}}/)
 
-<!-- # Previous Projects
+<!-- # Previous Projectstitle: An example title
 
 {% include projects.html %} -->
