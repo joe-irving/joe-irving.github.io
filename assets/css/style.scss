@@ -1,10 +1,10 @@
 ---
 ---
 
-$bg-color:       {{ site.background_color }} !default;
-$accent-color:   {{ site.accent_color  }} !default;
+$bg-color:       {{ site.background_color }};
+$accent-color:   {{ site.accent_color }};
 $header-font:    "/assets/fonts/MajorMonoDisplay-Regular.ttf";
-$font: "/assets/fonts/MontserratAlternates-Light.ttf";
+$font:           "/assets/fonts/MontserratAlternates-Light.ttf";
 
 // Default numbers
 

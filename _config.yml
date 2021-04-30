@@ -1,6 +1,7 @@
 title: Websites Dissent
 
 background_color: "rgb(171,32,253)"
+accent_color: "#fff"
 
 plugins:
   - jekyll-sitemap
