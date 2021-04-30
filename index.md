@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: home
+image: /assets/images/preview.png
 ---
 # {{site.title}}
 

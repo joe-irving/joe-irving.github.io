@@ -14,10 +14,11 @@
 body, html{
   margin: 0;
 }
-main{
+.home main{
   > *:not(h1){
     max-width: $article-width;
     margin: 2vw auto;
+    padding: 0 1vw;
   }
   a{
     color: $accent_color;
@@ -29,6 +30,7 @@ main{
   h1,h2,h3,h4,h5,h6{
     font-family: header-font, monospace;
   }
+  // Styling the big headers
   h1{
     width: 100%;
     text-align:center;
@@ -41,6 +43,9 @@ main{
     &::after{
       content: "/>";
     }
+  }
+  h2{
+    text-align: center;
   }
 }
 section.projects{
