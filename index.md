@@ -1,7 +1,11 @@
 ---
 layout: home
 image: /assets/images/preview.png
+<<<<<<< HEAD
 title: Free (ish) websites for grassroots groups
+=======
+
+>>>>>>> ca4afea405faf21bfdba878409ec2b4f46c79add
 ---
 # {{site.title}}
 
