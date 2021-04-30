@@ -1,6 +1,7 @@
 ---
 layout: home
 image: /assets/images/preview.png
+title: An example title
 ---
 # {{site.title}}
 
