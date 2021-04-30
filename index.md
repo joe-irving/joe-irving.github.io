@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Websites Dissent
+# {{site.title}}
 
 ## About
 
