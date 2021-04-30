@@ -1,7 +1,11 @@
 title: Websites Dissent
 
+email: joe@irving.me.uk
+url: joe.irving.me.uk
+telegram: chaoscake
+
 background_color: "rgb(171,32,253)"
-accent_color: "#fff"
+accent_color: red
 
 plugins:
   - jekyll-sitemap

@@ -19,22 +19,22 @@ main{
     max-width: $article-width;
     margin: 2vw auto;
   }
-  > p,>li,>a{
+  a{
+    color: $accent_color;
+  }
+  p,li,a{
     font-family: main-font;
+    line-height: 1.5;
   }
   h1,h2,h3,h4,h5,h6{
     font-family: header-font, monospace;
   }
-  > p{
-    line-height: 1.5;
-  }
-  > h1{
+  h1{
     width: 100%;
     text-align:center;
     margin: 0;
     padding: 45vh 0;
     background-color: $bg-color;
-
     &::before{
       content: "<";
     }
