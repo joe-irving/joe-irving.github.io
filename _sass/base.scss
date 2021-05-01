@@ -7,30 +7,87 @@
     src: url($font) format("truetype");
 }
 
+$transition: 500ms;
+
 .hide{
   display: none;
 }
 
 body, html{
   margin: 0;
+  box-sizing: border-box;
 }
-.home main{
-  > *:not(h1){
+*:not(h1,h2,h3,h4,h5,h6){
+  font-family: main-font;
+}
+main{
+  > *:not(h1), img{
     max-width: $article-width;
     margin: 2vw auto;
     padding: 0 1vw;
   }
   a{
+    transition: $transition;
     color: $accent_color;
+    &:hover{
+      color: $bg_color;
+      // text-decoration:underline;
+      text-decoration-style: wavy;
+    }
   }
   p,li,a{
-    font-family: main-font;
+
     line-height: 1.5;
+  }
+  blockquote{
+    width: 95%;
+    border-left: 5px solid $bg_color;
+    :last-child > li{
+      margin-left: 0;
+      list-style-type: circle;
+    }
+  }
+  li{
+    margin-left: calc(2vw + 20px);
+    &::marker{
+      color: $bg_color;
+    }
   }
   h1,h2,h3,h4,h5,h6{
     font-family: header-font, monospace;
+    *{
+      font-family: header-font, monospace;
+    }
+     a{
+      text-decoration: none;
+    }
   }
-  // Styling the big headers
+  hr{
+    // border-color: $accent_color;
+    border:0;
+    border-bottom: 1px solid $accent_color;
+  }
+  strong{
+    font-weight: bolder;
+  }
+  form{
+    > *{
+      display: block;
+    }
+    input[type="email"],textarea,input[type="text"]{
+      width:100%;
+      &:invalid{
+        color: red;
+      }
+    }
+    textarea{
+      height: 200px;
+      max-width: 100%;
+    }
+  }
+}
+.home main{
+  // Big headers
   h1{
     width: 100%;
     text-align:center;

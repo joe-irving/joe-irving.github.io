@@ -12,6 +12,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-linkpreview
 
 sass:
     sass_dir: _sass
