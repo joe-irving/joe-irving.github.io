@@ -21,10 +21,13 @@ body, html{
   font-family: main-font;
 }
 main{
-  > *:not(h1), img{
+  > *:not(h1){
     max-width: $article-width;
     margin: 2vw auto;
     padding: 0 1vw;
+  }
+  img{
+    max-width: 100%;
   }
   a{
     transition: $transition;
@@ -36,7 +39,6 @@ main{
     }
   }
   p,li,a{
-
     line-height: 1.5;
   }
   blockquote{
