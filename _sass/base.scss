@@ -21,9 +21,15 @@ body, html{
   font-family: main-font;
 }
 main{
+  h2{
+    font-size: calc(min(50px,14vw));
+  }
+  h3{
+    font-size: calc(min(35px,12vw));
+  }
   > *:not(h1){
     max-width: $article-width;
-    margin: 2vw auto;
+    margin: calc(min(20px,2vw)) auto;
     padding: 0 1vw;
   }
   img{
@@ -34,12 +40,12 @@ main{
     color: $accent_color;
     &:hover{
       color: $bg_color;
-      // text-decoration:underline;
       text-decoration-style: wavy;
     }
   }
   p,li,a{
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 18px;
   }
   blockquote{
     width: 95%;
@@ -73,11 +79,12 @@ main{
     font-weight: bolder;
   }
   form{
+    width:90%;
     > *{
       display: block;
     }
     input[type="email"],textarea,input[type="text"]{
-      width:100%;
+      width:90%;
       &:invalid{
         color: red;
       }
@@ -87,6 +94,7 @@ main{
       max-width: 100%;
     }
   }
+
 }
 .home main{
   // Big headers
