@@ -1,13 +1,15 @@
 ---
 layout: home
 image: /assets/images/preview.png
-title: Free (ish) websites for grassroots groups
+title: Free website building for grassroots groups
 ---
+
 # {{site.title}}
 
 ## About
 
-The climate is breaking down, authoritarianism is on the rise and it has become a moral duty to **rise up**. With grassroots groups popping up around the country, people are going to need websites!
+The climate is breaking down, authoritarianism is on the rise and it has become a moral duty to **rise up**. With grassroots groups popping up around the country, people are going to need websites! Whether it is just for a community group, or for documentation
+of how to blow up a pipeline I would love to help.
 
 I am a 20 year old nerd who takes enjoyment in making simple websites.
 The internet is full of hosting companies that take £100s from people

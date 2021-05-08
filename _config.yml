@@ -1,18 +1,21 @@
 title: Websites for Dissent
-description: Free (ish) websites for grassroots groups
-
-email: joe@irving.me.uk
+description: Free websites for grassroots groups
 url: https://joe.irving.me.uk
-telegram: chaoscake
 
-background_color: "rgb(171,32,253)"
-accent_color: red
+# Social & contact
+telegram: chaoscake
+email: joe@irving.me.uk
+
+background_color: "#000000"
+accent_color: "#CD00CD"
+
+permalink: /:categories/:title/
+collections:
+  posts:
+    permalink: /posts/:categories/:title/
 
 plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-linkpreview
-
-sass:
-    sass_dir: _sass

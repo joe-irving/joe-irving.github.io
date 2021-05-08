@@ -2,12 +2,14 @@
   action="https://formspree.io/f/mjvjgrvl"
   method="POST">
   <label>
-    Email<br>
-    <input type="email" name="_replyto">
+    Email
+    <input id="email-in"  type="email" name="_replyto">
   </label>
   <label>
-    Message<br>
-    <textarea name="message"></textarea>
+    Phone
+    <input id="tel-in" type="tel" name="number">
   </label>
+  <label for="message-in">Message</label>
+  <textarea id="message-in" name="message"></textarea>
   <button type="submit">Send</button>
 </form>
