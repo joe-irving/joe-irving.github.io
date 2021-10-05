@@ -1,0 +1,22 @@
+header{
+  background-color: $bg-color;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: $content-spacing $content-spacing * 3 ;
+    a {
+      text-decoration: none;
+      font-family: "header-font";
+      font-size: 2em;
+    }
+    > ul{
+      list-style: none;
+      display: flex;
+      margin: 0;
+      > li {
+        margin: 0;
+
+      }
+    }
+  }
+}
