@@ -1,0 +1,97 @@
+@font-face { font-family: "header-font"; src: url("/assets/fonts/MajorMonoDisplay-Regular.ttf") format("truetype"); }
+
+@font-face { font-family: "main-font"; src: url("/assets/fonts/MontserratAlternates-Light.ttf") format("truetype"); }
+
+.hide { display: none; }
+
+body, html { margin: 0; box-sizing: border-box; }
+
+*:not(h1, h2, h3, h4, h5, h6) { font-family: main-font; }
+
+main .big-header { width: 100%; text-align: center; margin: 0; padding: 30vh 0 60vh 0; background-color: #000000; color: #CD00CD; clip-path: polygon(0% 0%, 7% 6%, 7% 6%, 13% 3%, 13% 3%, 19% 7%, 19% 7%, 24% 4%, 24% 4%, 30% 5%, 30% 5%, 31% 8%, 31% 11%, 37% 3%, 37% 3%, 45% 2%, 45% 2%, 51% 9%, 51% 9%, 60% 3%, 60% 3%, 66% 7%, 66% 7%, 74% 3%, 74% 3%, 76% 11%, 76% 14%, 83% 6%, 83% 6%, 90% 4%, 90% 4%, 95% 6%, 95% 6%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 94% 97%, 94% 97%, 86% 98%, 86% 98%, 78% 99%, 78% 99%, 74% 95%, 74% 95%, 63% 99%, 63% 99%, 57% 96%, 57% 96%, 43% 95%, 43% 95%, 34% 95%, 34% 95%, 31% 91%, 31% 91%, 19% 95%, 19% 95%, 9% 99%, 9% 99%, 0% 100%, 0% 100%, 0% 0%); clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 87% 94%, 78% 99%, 69% 95%, 61% 99%, 54% 95%, 45% 98%, 35% 92%, 29% 99%, 21% 93%, 14% 98%, 7% 92%, 3% 99%, 0% 100%); }
+
+main .big-header::selection { background-color: #CD00CD; color: #000000; }
+
+main h1 { font-size: calc(max(5vw,35px)); text-align: center; }
+
+main h2 { font-size: calc(min(50px,14vw)); }
+
+main h3 { font-size: calc(min(35px,12vw)); }
+
+main h4 { font-size: calc(min(30px,11vw)); }
+
+main h5 { font-size: calc(min(28px,11vw)); }
+
+main h6 { font-size: calc(min(23px,9vw)); }
+
+main > *:not(h1, .big-header) { max-width: 600px; width: 100%; margin: calc(min(20px,2vw)) auto; padding: 0 1vw; }
+
+main *::selection { color: #CD00CD; background-color: #000000; }
+
+main img { max-width: 90%; text-align: center; }
+
+main a { transition: 500ms; color: #CD00CD; }
+
+main a:hover { color: #000000; text-decoration-style: wavy; }
+
+main p, main li, main label { font-size: 18px; }
+
+main p, main li { line-height: 1.7; }
+
+main blockquote { width: 95%; border-left: 5px solid #000000; }
+
+main blockquote :last-child > li { margin-left: 0; list-style-type: circle; }
+
+main li { margin-left: calc(2vw + 20px); }
+
+main li::marker { color: #000000; }
+
+main h1, main h2, main h3, main h4, main h5, main h6 { font-family: header-font, monospace; }
+
+main h1 *, main h2 *, main h3 *, main h4 *, main h5 *, main h6 * { font-family: header-font, monospace; }
+
+main h1 a, main h2 a, main h3 a, main h4 a, main h5 a, main h6 a { text-decoration: none; }
+
+main hr { border: 0; border-bottom: 1px solid #CD00CD; }
+
+main strong { font-weight: bolder; }
+
+main form { width: 90%; align-items: center; }
+
+main form > * { display: block; }
+
+main form textarea, main form input { width: 90%; }
+
+main form textarea:invalid, main form input:invalid { color: red; }
+
+main form textarea { height: 200px; max-width: 100%; }
+
+main button { background-color: #CD00CD; border: 0; border-radius: 1em; padding: 0.5em 1em; margin: 0.5em auto; transition: 500ms; font-weight: 900; font-size: 20px; color: white; text-transform: uppercase; }
+
+main button:hover { background-color: #000000; }
+
+main.home h1 { width: 100%; text-align: center; margin: 0; padding: 30vh 0 60vh 0; background-color: #000000; color: #CD00CD; clip-path: polygon(0% 0%, 7% 6%, 7% 6%, 13% 3%, 13% 3%, 19% 7%, 19% 7%, 24% 4%, 24% 4%, 30% 5%, 30% 5%, 31% 8%, 31% 11%, 37% 3%, 37% 3%, 45% 2%, 45% 2%, 51% 9%, 51% 9%, 60% 3%, 60% 3%, 66% 7%, 66% 7%, 74% 3%, 74% 3%, 76% 11%, 76% 14%, 83% 6%, 83% 6%, 90% 4%, 90% 4%, 95% 6%, 95% 6%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 94% 97%, 94% 97%, 86% 98%, 86% 98%, 78% 99%, 78% 99%, 74% 95%, 74% 95%, 63% 99%, 63% 99%, 57% 96%, 57% 96%, 43% 95%, 43% 95%, 34% 95%, 34% 95%, 31% 91%, 31% 91%, 19% 95%, 19% 95%, 9% 99%, 9% 99%, 0% 100%, 0% 100%, 0% 0%); }
+
+main.home h1::selection { background-color: #CD00CD; color: #000000; }
+
+main.home h1:first-child { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 87% 94%, 78% 99%, 69% 95%, 61% 99%, 54% 95%, 45% 98%, 35% 92%, 29% 99%, 21% 93%, 14% 98%, 7% 92%, 3% 99%, 0% 100%); }
+
+main.home h1::before { content: "<"; }
+
+main.home h1::after { content: "/>"; }
+
+main.home h2 { text-align: center; }
+
+section.projects iframe { border: 0; width: 100%; height: 90vh; }
+
+header { background-color: #000000; }
+
+header nav { display: flex; justify-content: space-between; padding: 10px 30px; }
+
+header nav a { text-decoration: none; font-family: "header-font"; font-size: 2em; }
+
+header nav > ul { list-style: none; display: flex; margin: 0; }
+
+header nav > ul > li { margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
