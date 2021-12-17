@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   {% include head.html %}
   <body>
+    {% unless page.header == false %}
     {% include header.html %}
+    {% endunless %}
     {{ content }}
   </body>
 </html>
